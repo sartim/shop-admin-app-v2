@@ -33,7 +33,7 @@ public partial class LoginPage : ContentPage
             if (isAuthenticated)
             {
                 // Navigate to the home page upon successful login
-                await Navigation.PushAsync(new MainPage());
+                await Navigation.PushAsync(new home.HomePage());
             }
             else
             {
