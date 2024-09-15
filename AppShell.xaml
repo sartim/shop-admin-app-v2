@@ -3,7 +3,7 @@
     x:Class="ShopAdmin.AppShell"
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-    xmlns:local="clr-namespace:ShopAdmin.App.Pages.auth"
+    xmlns:local="clr-namespace:ShopAdmin.Pages.auth"
     Shell.FlyoutBehavior="Disabled"
     Title="ShopAdmin">
 
