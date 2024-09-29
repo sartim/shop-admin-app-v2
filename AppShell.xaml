@@ -8,7 +8,6 @@
     Title="ShopAdmin">
 
     <ShellContent
-        Title="LOGIN"
         ContentTemplate="{DataTemplate local:LoginPage}"
         Route="LoginPage" />
 
