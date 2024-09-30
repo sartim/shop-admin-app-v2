@@ -10,6 +10,7 @@ public partial class AppShell : Shell
 	protected override void OnAppearing()
 	{
 		base.OnAppearing();
-		AppShell.SetBackgroundColor(this, Color.FromRgb(0, 152, 225));      
+		AppShell.SetBackgroundColor(this, Color.FromRgb(0, 152, 225));   
+		AppShell.SetTitleColor(this, Color.FromRgb(0, 0, 0));
 	}
 }
