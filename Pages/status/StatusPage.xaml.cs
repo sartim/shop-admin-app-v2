@@ -9,6 +9,7 @@ namespace ShopAdmin
         public StatusPage()
         {
             InitializeComponent();
+            NavigationPage.SetHasNavigationBar(this, false);
         }
     }
 }
