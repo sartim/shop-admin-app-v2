@@ -6,4 +6,10 @@ public partial class AppShell : Shell
 	{
 		InitializeComponent();
 	}
+
+	protected override void OnAppearing()
+	{
+		base.OnAppearing();
+		AppShell.SetBackgroundColor(this, Color.FromRgb(0, 152, 225));      
+	}
 }
