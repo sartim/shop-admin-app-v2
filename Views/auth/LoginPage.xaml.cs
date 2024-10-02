@@ -9,7 +9,7 @@ public partial class LoginPage : ContentPage
 	public LoginPage()
 	{
 		InitializeComponent();
-        // ProgressLoader.IsVisible = false;
+        ProgressLoader.IsVisible = false;
         EmailEntryLabel.IsVisible = false;
         PasswordEntryLabel.IsVisible = false;
 
@@ -19,7 +19,7 @@ public partial class LoginPage : ContentPage
 
     async void OnLoginButtonClicked(object sender, EventArgs e)
     {
-        // ProgressLoader.IsVisible = true;
+        ProgressLoader.IsVisible = true;
         EmailEntryLabel.IsVisible = false;
         PasswordEntryLabel.IsVisible = false;
 
@@ -52,7 +52,7 @@ public partial class LoginPage : ContentPage
         }
         
 
-        // ProgressLoader.IsVisible = false;
+        ProgressLoader.IsVisible = false;
     }
     async void CheckForJwtAsync()
     {

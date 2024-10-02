@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+			 x:Class="ShopAdmin.StatusPage">
+		<StackLayout>
+            <ListView
+                x:Name="listviewStatuses"
+                HorizontalOptions="FillAndExpand"
+                HasUnevenRows="True">
+                <ListView.ItemTemplate>  
+                    <DataTemplate>  
+                        <ViewCell>  
+                            <Grid HorizontalOptions="FillAndExpand">  
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="2*" />
+                                    <RowDefinition />
+                                    <RowDefinition Height="100" />
+                                </Grid.RowDefinitions>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition />
+                                    <ColumnDefinition />
+                                </Grid.ColumnDefinitions>
+                                <StackLayout>
+                                    <Grid>
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="2*" />
+                                            <RowDefinition />
+                                            <RowDefinition Height="100" />
+                                        </Grid.RowDefinitions>
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition />
+                                            <ColumnDefinition />
+                                        </Grid.ColumnDefinitions>
+
+                                        <Label Grid.Column="0" Text="{Binding name}" TextColor="#000" />
+                                        <Label Grid.Column="1" Text="{Binding description}" TextColor="#000"/>
+                                        <Label Grid.Column="2" Text="{Binding created_at}" TextColor="#000" />
+                                    </Grid>
+                                </StackLayout>
+                            </Grid>  
+                        </ViewCell>  
+                    </DataTemplate>  
+                </ListView.ItemTemplate>
+            </ListView>  
+            <ActivityIndicator x:Name="ProgressLoader" Color="#0098e1" IsRunning="True" />
+	    </StackLayout>
+</ContentPage>
