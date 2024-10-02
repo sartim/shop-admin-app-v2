@@ -10,16 +10,16 @@ namespace ShopAdminApp.Models
         public required string previous { get; set; }
         public required List<StatusDetail> results { get; set; }
 
-        public string? message { get; set; }
+        public string message { get; set; }
     }
 
     public class StatusDetail
     {
-        public string? id { get; set; }
-        public string? name { get; set; }
-        public string? description { get; set; }
-        public string? created_at { get; set; }
-        public string? updated_at { get; set; }
+        public required string id { get; set; }
+        public required string name { get; set; }
+        public required string description { get; set; }
+        public required string created_at { get; set; }
+        public required string updated_at { get; set; }
     }
 }
 

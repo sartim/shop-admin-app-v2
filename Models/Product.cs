@@ -6,31 +6,31 @@ namespace ShopAdminApp.Models
 {
     public class Product
 	{
-        public string? count { get; set; }
+        public required string count { get; set; }
 
-        public string? next { get; set; }
+        public required string next { get; set; }
 
-        public string? previous { get; set; }
+        public required string previous { get; set; }
 
-        public List<ProductDetail>? results { get; set; }
+        public required List<ProductDetail> results { get; set; }
        
     }
 
     public class ProductDetail
     {
-        public string? name { get; set; }
+        public required string name { get; set; }
 
-        public string? image_urls { get; set; }
+        public required string image_urls { get; set; }
 
         //public CategoryDetail category { get; set; }
 
-        public string? brand { get; set; }
+        public required string brand { get; set; }
 
-        public string? price { get; set; }
+        public required string price { get; set; }
 
-        public string? created_at { get; set; }
+        public required string created_at { get; set; }
 
-        public string? updated_at { get; set; }
+        public required string updated_at { get; set; }
     }
 }
 
