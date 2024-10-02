@@ -5,10 +5,10 @@ namespace ShopAdminApp.Models
 {
 	public class Status
 	{
-        public string? count { get; set; }
-        public string? next { get; set; }
-        public string? previous { get; set; }
-        public List<StatusDetail>? results { get; set; }
+        public required string count { get; set; }
+        public required string next { get; set; }
+        public required string previous { get; set; }
+        public required List<StatusDetail> results { get; set; }
 
         public string? message { get; set; }
     }
