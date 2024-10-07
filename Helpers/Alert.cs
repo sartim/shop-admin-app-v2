@@ -9,6 +9,7 @@ namespace ShopAdmin.Helpers
     {
         public static async Task ToastAlert(string text)
         {
+            // Toast delay set to 5
             ToastDuration duration = ToastDuration.Short;
             double fontSize = 14;
             var toast = Toast.Make(text, duration, fontSize);
