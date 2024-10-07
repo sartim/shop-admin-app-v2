@@ -56,16 +56,14 @@ namespace shupavuApp.ViewModels
 
         private async Task Login()
         {
-            if (!IsPhoneInvalid) {
-                IsLoading = true;
-                bool isAuthenticated = await _authService.Authenticate(Email);
-                if (isAuthenticated) {
-                    Application.Current.MainPage = new NavigationPage(new AppShell());
-                } else {
-                    IsLoading = false;
-                    string text = "Invalid credentials, Please try again";
-                    await Alert.ToastAlert(text);
-                }
+            IsLoading = true;
+            bool isAuthenticated = await _authService.Authenticate(Email);
+            if (isAuthenticated) {
+                Application.Current.MainPage = new NavigationPage(new AppShell());
+            } else {
+                IsLoading = false;
+                string text = "Invalid credentials, Please try again";
+                await Alert.ToastAlert(text);
             }
         }
 
