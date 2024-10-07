@@ -1,10 +1,9 @@
 using System.ComponentModel;
 using System.Runtime.CompilerServices;
-using ShopAdmin;
 using ShopAdminApp.Services;
-using shupavuApp.Helpers;
+using ShopAdmin.Helpers;
 
-namespace shupavuApp.ViewModels
+namespace ShopAdmin.ViewModels
 {
     public class LoginViewModel : INotifyPropertyChanged
     {
@@ -57,7 +56,7 @@ namespace shupavuApp.ViewModels
         private async Task Login()
         {
             IsLoading = true;
-            bool isAuthenticated = await _authService.Authenticate(Email);
+            bool isAuthenticated = await _authService.Authenticate(Email, Password);
             if (isAuthenticated) {
                 Application.Current.MainPage = new NavigationPage(new AppShell());
             } else {
