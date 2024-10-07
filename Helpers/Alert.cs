@@ -3,7 +3,7 @@
 using CommunityToolkit.Maui.Alerts;
 using CommunityToolkit.Maui.Core;
 
-namespace shupavuApp.Helpers
+namespace ShopAdmin.Helpers
 {
     public class Alert
     {
