@@ -1,6 +1,6 @@
 using ShopAdminApp.Services;
 
-namespace ShopAdmin;
+namespace ShopAdmin.Views;
 
 public partial class LoginPage : ContentPage
 {
