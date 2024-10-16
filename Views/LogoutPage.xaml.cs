@@ -1,4 +1,4 @@
-﻿namespace ShopAdmin
+﻿namespace ShopAdmin.Views
 {
     public partial class LogoutPage : ContentPage
     {

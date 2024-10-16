@@ -2,7 +2,7 @@
 using ShopAdminApp.Models;
 using ShopAdminApp.Services;
 
-namespace ShopAdmin
+namespace ShopAdmin.Views
 {
     public partial class StatusPage : ContentPage
     {
