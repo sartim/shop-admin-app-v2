@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Diagnostics;
 using System.Net.Http;
 using System.Net.Http.Headers;
 using System.Text;
@@ -42,7 +43,7 @@ namespace ShopAdminApp.Services
             }
             else
             {
-                Console.WriteLine($"Request failed: {response.StatusCode}");
+                Debug.WriteLine($"Request failed: {response.StatusCode}");
                 return default;
             }
         }

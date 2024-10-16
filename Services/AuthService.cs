@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Diagnostics;
 using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
@@ -25,8 +26,8 @@ namespace ShopAdminApp.Services
                 }
                 catch (Exception ex)
                 {
-                    Console.WriteLine(ex);
-                    Console.WriteLine("Possible that device doesn't support secure storage on device.");
+                    Debug.WriteLine(ex);
+                    Debug.WriteLine("Possible that device doesn't support secure storage on device.");
                 }
             }
 
